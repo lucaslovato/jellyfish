@@ -23,7 +23,7 @@ cd src
 #cd ..
 
 # build all projects
-dotnet build ConsoleApp/ConsoleApp.csproj -c Release
+dotnet build ConsoleApp/ConsoleApp.csproj -c Debug
 
 # fix connection strings
 #./use-ci-conn-string
