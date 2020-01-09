@@ -15,7 +15,7 @@ docker-compose --version
 cd src
 
 #up database
-docker-compose -f docker-compose.test.yml -d up
+docker-compose -f docker-compose.test.yml up
 
 # enter WebApp directory
 sudo npm install n
