@@ -15,7 +15,7 @@ docker-compose --version
 cd src
 
 #up database
-docker-compose -f docker-compose.test.yml up
+docker-compose -f docker-compose.test.yml up -d
 
 # enter WebApp directory
 sudo npm install n
@@ -38,9 +38,10 @@ dotnet build -c Release
 
 # apply migrations
 # need to setup postgres on .yml file
-#cd consoleapp
-# ./migrate.sh
+cd ConsoleApp
+./migrate.sh
 
+cd ..
 # run c# tests
 cd Test
 dotnet test --verbosity normal
