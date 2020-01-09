@@ -31,17 +31,17 @@ npm test
 cd ..
 
 # build all projects
-dotnet build -c Release
+dotnet build ./src/ConsoleApp/ConsoleApp.csproj -c Release
 
 # fix connection strings
 #./use-ci-conn-string
 
 # apply migrations
 # need to setup postgres on .yml file
-cd ConsoleApp
-./migrate.sh
+#cd ConsoleApp
+#./migrate.sh
+#cd ..
 
-cd ..
 # run c# tests
 cd Test
 dotnet test --verbosity normal
