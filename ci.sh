@@ -28,7 +28,7 @@ npm test
 cd ..
 
 # build all projects
-dotnet build ConsoleApp/ConsoleApp.csproj -c Debug
+dotnet build -c Release
 
 # fix connection strings
 #./use-ci-conn-string
@@ -40,4 +40,4 @@ dotnet build ConsoleApp/ConsoleApp.csproj -c Debug
 
 # run c# tests
 cd Test
-dotnet test --verbosity normal --no-restore --no-build
+dotnet test --verbosity normal
