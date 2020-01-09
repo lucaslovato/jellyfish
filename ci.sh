@@ -6,7 +6,8 @@ set -ex
 dotnet --info
 node --version
 npm --version
-
+docker --version
+docker-compose --version
 # check for commited password
 #test $(grep 'Password=' $(find . -name 'appsettings.json') | grep -v 'Password=dbpassword' | wc -l) -eq 0
 
@@ -14,13 +15,17 @@ npm --version
 cd src
 
 # enter WebApp directory
-#cd webapp
+npm install n
 
-#npm install
+n 9.11.1
 
-#npm test
+cd WebApp
 
-#cd ..
+npm install
+
+npm test
+
+cd ..
 
 # build all projects
 dotnet build ConsoleApp/ConsoleApp.csproj -c Debug
