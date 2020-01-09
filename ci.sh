@@ -15,9 +15,9 @@ docker-compose --version
 cd src
 
 # enter WebApp directory
-npm install n
+sudo npm install n
 
-n 9.11.1
+sudo n 9.11.1
 
 cd WebApp
 
