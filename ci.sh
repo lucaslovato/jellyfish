@@ -31,7 +31,7 @@ npm test
 cd ..
 
 # build all projects
-dotnet build ./src/ConsoleApp/ConsoleApp.csproj -c Release
+dotnet build ./ConsoleApp/ConsoleApp.csproj -c Release
 
 # fix connection strings
 #./use-ci-conn-string
