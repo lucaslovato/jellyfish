@@ -6,43 +6,33 @@ set -ex
 dotnet --info
 node --version
 npm --version
-tsfmt --version
-uncrustify --version
 
 # check for commited password
-test $(grep 'Password=' $(find . -name 'appsettings.json') | grep -v 'Password=dbpassword' | wc -l) -eq 0
+#test $(grep 'Password=' $(find . -name 'appsettings.json') | grep -v 'Password=dbpassword' | wc -l) -eq 0
 
 # enter source directory
 cd src
 
-# check C# style
-uncrustify -c ../uncrustify.cfg --check $(find . -name '*.cs' | grep -v "Migrations")
-
 # enter WebApp directory
-cd WebApp
+#cd webapp
 
-# check TS(X) style
-tsfmt --verify $(find . -name '*.ts' -o -name '*.tsx' | grep -v 'types.*\.ts$')
+#npm install
 
-# install front-end dependencies
-npm install
+#npm test
 
-# run front-end tests
-npm test
-
-# go back to source directory
-cd ..
+#cd ..
 
 # build all projects
-dotnet build
+dotnet build ConsoleApp/ConsoleApp.csproj -c Release
 
 # fix connection strings
-./use-ci-conn-string
+#./use-ci-conn-string
 
 # apply migrations
-cd ConsoleApp
-./migrate.sh
+# need to setup postgres on .yml file
+#cd consoleapp
+# ./migrate.sh
 
-# run C# tests
-cd ../Test
+# run c# tests
+cd Test
 dotnet test --verbosity normal --no-restore --no-build
