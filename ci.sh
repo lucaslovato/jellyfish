@@ -24,9 +24,9 @@ sudo n 9.11.1
 
 cd WebApp
 
-npm install
+sudo npm install
 
-npm test
+sudo npm test
 
 cd ..
 
