@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationModels", "ApplicationModels\ApplicationModels.csproj", "{C11098C0-5244-42C4-A8C0-6F57AA97585C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{2E2F372C-CCE9-4DEE-A8F6-9AD8EA3C8BCF}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jobs.Fetcher.Facebook", "Jobs.Fetcher.Facebook\Jobs.Fetcher.Facebook.csproj", "{8B548585-10C9-45AA-A45B-92057E40A19F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{0FF73596-BC0F-412B-9CD8-EBA0EDD6F32B}"
@@ -45,18 +43,6 @@ Global
 		{C11098C0-5244-42C4-A8C0-6F57AA97585C}.Release|x64.Build.0 = Release|Any CPU
 		{C11098C0-5244-42C4-A8C0-6F57AA97585C}.Release|x86.ActiveCfg = Release|Any CPU
 		{C11098C0-5244-42C4-A8C0-6F57AA97585C}.Release|x86.Build.0 = Release|Any CPU
-		{2E2F372C-CCE9-4DEE-A8F6-9AD8EA3C8BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E2F372C-CCE9-4DEE-A8F6-9AD8EA3C8BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E2F372C-CCE9-4DEE-A8F6-9AD8EA3C8BCF}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{2E2F372C-CCE9-4DEE-A8F6-9AD8EA3C8BCF}.Debug|x64.Build.0 = Debug|Any CPU
-		{2E2F372C-CCE9-4DEE-A8F6-9AD8EA3C8BCF}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{2E2F372C-CCE9-4DEE-A8F6-9AD8EA3C8BCF}.Debug|x86.Build.0 = Debug|Any CPU
-		{2E2F372C-CCE9-4DEE-A8F6-9AD8EA3C8BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E2F372C-CCE9-4DEE-A8F6-9AD8EA3C8BCF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2E2F372C-CCE9-4DEE-A8F6-9AD8EA3C8BCF}.Release|x64.ActiveCfg = Release|Any CPU
-		{2E2F372C-CCE9-4DEE-A8F6-9AD8EA3C8BCF}.Release|x64.Build.0 = Release|Any CPU
-		{2E2F372C-CCE9-4DEE-A8F6-9AD8EA3C8BCF}.Release|x86.ActiveCfg = Release|Any CPU
-		{2E2F372C-CCE9-4DEE-A8F6-9AD8EA3C8BCF}.Release|x86.Build.0 = Release|Any CPU
 		{8B548585-10C9-45AA-A45B-92057E40A19F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8B548585-10C9-45AA-A45B-92057E40A19F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B548585-10C9-45AA-A45B-92057E40A19F}.Debug|x64.ActiveCfg = Debug|Any CPU
