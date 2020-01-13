@@ -12,6 +12,8 @@ node --version
 docker --version
 docker-compose --version
 
+cd src
+
 # build all projects
 dotnet build ./ap.sln -c Release
 
