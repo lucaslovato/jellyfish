@@ -24,7 +24,8 @@ uncrustify --version
 cd src
 
 #Uncrustify verification
-uncrustify -c ../uncrustify.cfg --check $(find . -name '*.cs' | grep -v "Migrations")
+#uncrustify -c ../uncrustify.cfg --check $(find . -name '*.cs' | grep -v "Migrations")
+uncrustify -c ../uncrustify.cfg --no-backup $(find . -name '*.cs' | grep -v "Migrations")
 
 # up databases
 docker-compose -f docker-compose.test.yml up -d
